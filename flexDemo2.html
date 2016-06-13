@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>flex弹性布局</title>
+		<style>
+		body{margin:0;}
+		ul,li{margin:0; padding:0;}
+		li{list-style-type:none;}
+		#list{border:2px solid gold; height:500px; display:flex; flex-direction:row;}
+		#list li{font-family:"microsoft yahei"; font-size:50px; background:#C00; color:#fff; margin:2px; flex-grow:1;}
+		#list li:nth-child(2){flex-grow:3;}
+		</style>
+	</head>
+	<body>
+		<ul id="list">
+			<li>test1</li>
+			<li>test2</li>
+			<li>test3</li>
+		</ul>
+	</body>
+</html>
