@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>无标题</title>
+	<style type="text/css">
+		body {
+			margin: 3em 10%;
+			background: #333;
+		}
+		.ball {
+			animation-name: ballmove;
+			animation-duration: 2s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: 1;
+
+			animation-delay: 1s;
+			animation-fill-mode: both;
+		}
+		@keyframes ballmove {
+			0% {
+				transform: translateX(0) rotate(0);
+			}
+			20% {
+				transform: translateX(-10px) rotate(-0.5turn);
+			}
+			100% {
+				transform: translateX(450px) rotate(2turn);
+			}
+		}
+	</style>
+</head>
+<body>
+<img class="ball" src="http://www.w3cplus.com/sites/default/files/blogs/2015/1506/ball.png" alt="ball"width="111" height="111" />
+</body>
+</html>

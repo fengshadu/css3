@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>无标题</title>
+	<style type="text/css">
+		body {
+			margin: 3em 10%;
+			background: #333;
+		}
+		.sprite {
+	    	width:245px;
+		  	height:400px;
+		  	display:block;    
+		  	background:transparent url(http://www.w3cplus.com/sites/default/files/blogs/2015/1506/walker.png) 0 0 no-repeat;  
+		 	margin:3em auto;
+		  	animation: walker 1s steps(5) infinite;
+		}
+
+
+		@keyframes walker {
+		  	from {background-position:0 0;}
+		  	to {background-position:0 -4000px;}
+		}
+	</style>
+</head>
+<body>
+<div class="sprite"></div>  
+</body>
+</html>
