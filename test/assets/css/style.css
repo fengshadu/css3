@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/* CSS Document */
+/* reset.css */
+/* 不要写入ul,li样式，会影响到编辑器生成的样式。 */
+body,
+dl,
+dd,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+form,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+body li {
+	  list-style: none;
+}
+img {
+  border: none;
+}
+a {
+	text-decoration: none;
+}
+.clear {
+  zoom: 1;
+}
+.clear:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  visibility: hidden; 
+  clear: both; 
+  overflow: hidden;
+}
+table {
+	border: 0;
+	margin: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	background: #f2f4f5;
+	font-family: "微软雅黑";
+	
+}
+
+/******************
+    响应式
+*******************/
+@media all and (min-width:320px){
+    html{font-size:10px;}
+}
+@media all and (min-width:360px){
+    html{font-size:11.25px;}
+}
+@media all and (min-width:375px){
+    html{font-size:11.8px;}
+}
+
+@media all and (min-width:384px){
+    html{font-size:12px;}
+}
+@media all and (min-width:400px){
+    html{font-size:12.5px;}
+}
+@media all and (min-width:414px){
+    html{font-size:12.94px;}
+}
+@media all and (max-height:416px){
+
+}
+/* 弹性布局 */
+.flex_box{display:-webkit-box;}
+.flex{
+	-webkit-box-flex:1;
+}
+.v{-webkit-box-orient:vertical;}
+.h{-webkit-box-orient:horizontal;}
+.hc{-webkit-box-pack:center;}
+.vc{-webkit-box-align:center;}
+.index_container {
+	max-width: 32rem;
+	margin: 0 auto;
+
+	
+}
+.index_nav {
+	text-align: center;
+
+	background: #fff;
+
+}
+.index_nav ul {
+	padding-top: 25px;
+}
+.index_nav .index_icon {
+	width: 29px;
+	height: 29px;
+	display: block;
+	margin: 0 auto;
+	background: url(../images/index_icon.png) no-repeat 0 0;
+	background-size: cover;
+}
+.index_nav .index_icon.icon_time {
+	background-position: -75px -1px;
+}
+.index_nav .index_icon.icon_secure {
+	background-position: -150px 0;
+}
+.index_nav .index_icon.icon_fund {
+	background-position: -230px 0;
+}
+
+
+.index_nav li span {
+	line-height: 3em;
+    font-size: 1.2rem;
+    color: #878787;
+}
+
+/* 推荐 */
+.recomm_container {
+    font-size: 1.6rem;
+}
+
+.recomm_list li {
+	margin-top: 20px;
+	padding: 15px 0;
+	background: #fff;
+}
+.recomm_list_box {
+	padding: 0 1.6rem;
+}
+.recomm_list_l {
+	width: 13.2rem;
+    position: relative;
+    color: #f54746;
+}
+.recomm_list_l em {
+	font-style: normal;
+}
+.recomm_list_l big {
+	font-size: 44px;
+}
+.recomm_list_l span {
+	display: block;
+
+}
+.recomm_list_l::after{
+	content: "";
+    display: block;
+    position: absolute;
+    /* height: 48px; */
+    background-color: #e9ebed;
+    width: 1px;
+    right: 15px;
+    /* top: 20px; */
+}
+
+.recomm_list_r .r_title{
+	font-size: 1.365rem;
+	color: #333;
+}
+.recomm_list_r .r_sub_title{
+	font-size: 1.4rem;
+	color: #878787;
+}
+.recomm_list_r .fund_feature {
+	padding: 1px 7px;
+	font-size: 1.1rem;
+	font-style: normal;
+	color: #0177f0;
+	border: 1px solid #0177f0;
+	border-radius: 10px;
+}
+
+
+.recomm_list li {
+	position: relative;
+}
+.recomm_list .recomm_list_corner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-style: normal;
+
+	font-size: 1rem;
+    height: 0;
+    width: 2.5rem;
+    border-bottom: 2rem solid #ff7170;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    position: absolute;
+    right: -1.6rem;
+    top: .8rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    color: #fff;
+    padding-left: .5rem;
+    line-height: 1.8rem;
+   	text-align: center;
+   	text-indent: -8px;
+}
+
+/* 投资tips */
+.tips_container {
+	margin-top: 20px;
+	background: #fff;
+    font-size: 1.365rem;
+    color: #0177f0;
+}
+.tips_list {
+	text-align: center;
+}
+.tips_list .tips_word{
+	width: 7.08rem;
+	height: 7.08rem;
+	line-height: 7.08rem;
+	border: 1px solid #66adf6;
+	border-radius: 3.54rem;
+	text-align: center;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.tips_list .tips_word.special {
+	line-height: 1.8rem;
+}
+.tips_list .tips_word.special span{
+	display: block;
+	margin-top: 1.8rem;
+}
+.tips_list .tips_sub_word {
+	color: #7494be;
+	font-size: 1.19rem;
+
+}
+
+/* 收益列表 */
+.fund_container {
+	margin-top: 20px;
+	padding: 0 1.6rem;
+	background: #fff;
+	font-size: 1.6rem;
+}
+.fund_list li {
+	padding: 1rem 0;
+}
+.fund_list .fund_name{
+	padding-bottom: 1rem;
+	font-size: 1.365rem;
+	line-height: 2rem;
+}
+.fund_list .fund_name span {
+	padding-left: 5px;
+
+	font-size: 1.2rem;
+
+	color:#888f9b;
+}
+.fund_detail {
+	position: relative;
+
+}
+.fund_list .fund_detail_l {
+	float: left;
+	position: relative;
+	width: 13.2rem;
+}
+.fund_list .fund_detail_r {
+	float: right;
+	/*text-align: right;*/
+}
+.fund_list .detail_l_num {
+	font-size: 1.79rem;
+}
+.fund_list .detail_l_txt {
+	padding: .5rem 0;
+	font-size: 1.19rem;
+	color:#888f9b;
+}
+.fund_list .detail_l_rednum {
+	font-size: 1.79rem;
+	color: #f54746;
+}
+.fund_list .fund_sub_tips {
+	font-size: 1.19rem;
+	color:#888f9b;
+	border-top: 1px solid #dfdfdf;
+}
+.fund_list .fund_sub_tips li {
+	text-align: center;
+}
+.fund_list .fund_sub_tips li.sub_tips_l {
+	text-align: left;
+}
+.fund_list .fund_sub_tips li.sub_tips_r {
+	text-align: right;
+}
+.fund_list .fund_detail_target {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+}
+.fund_list .fund_detail i {
+	position: absolute;
+	top: -8px;
+	right: -5px;
+	font-style: normal;
+	color:#888f9b;
+}
